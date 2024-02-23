@@ -1,5 +1,5 @@
 {
-  "name": "imdb-search-task",
+  "name": "tmdb-search-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
