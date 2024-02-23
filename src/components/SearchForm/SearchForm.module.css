@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.input {
+    color: #222;
+    font-size: 14px;
+    padding: 12px 20px;
+    flex: 1;
+}
+
+.submit {
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.submit[disabled] {
+    cursor: default;
+    opacity: 0.6;
+}

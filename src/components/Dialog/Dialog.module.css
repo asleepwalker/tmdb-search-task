@@ -1,0 +1,42 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    max-width: 90%;
+    height: 90%;
+    padding: 32px;
+    overflow: auto;
+}
+
+@media (max-width: 599px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+    }
+}
+
+.close {
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    font-size: 34px;
+    line-height: 1;
+    top: 11px;
+    right: 15px;
+}

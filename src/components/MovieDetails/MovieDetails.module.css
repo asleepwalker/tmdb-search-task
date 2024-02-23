@@ -1,0 +1,164 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    gap: 24px;
+}
+
+.poster {
+    background-color: #ddd;
+    flex-shrink: 0;
+    width: 300px;
+    height: 450px;
+}
+
+@media (max-width: 599px) {
+    .poster {
+        display: none;
+    }
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.meta {
+    color: #888;
+    font-size: 14px;
+    margin-top: 4px;
+    list-style: none;
+}
+
+.meta li {
+    display: inline;
+}
+
+.meta li:not(:first-child)::before {
+    content: " • ";
+}
+
+.mobilePoster {
+    margin-top: 24px;
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .mobilePoster {
+        display: none;
+    }
+}
+
+.tagline {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.3;
+}
+
+.details {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.details p {
+    margin-top: 5px;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+    list-style: none;
+}
+
+.keywords li {
+    background: #eee;
+    border: 1px solid #999;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 2px 4px;
+}
+
+.sectionTitle {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.cast {
+    display: flex;
+    overflow: auto;
+    gap: 24px;
+}
+
+.actor {
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    font-size: 13px;
+    width: 160px;
+}
+
+.actorPhoto {
+    background-color: #ddd;
+    width: 160px;
+    height: 200px;
+}
+
+.actorName,
+.actorRole {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.actorName {
+    margin: 8px 8px 4px;
+}
+
+.actorRole {
+    margin: 0 8px 12px;
+}
+
+.recommendations {
+    display: flex;
+    overflow: auto;
+    gap: 24px;
+}
+
+.recommendation {
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    font-size: 13px;
+    width: 250px;
+}
+
+.recommendationPoster {
+    background-color: #ddd;
+    width: 250px;
+    height: 141px;
+}
+
+.recommendationName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 8px 8px 12px;
+}
